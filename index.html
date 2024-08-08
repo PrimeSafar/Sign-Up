@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="photo-side">
+        <img
+          src="Photo/amsterdam-city-archives-03zLiVWqwp8-unsplash(1).jpg"
+          alt="amsterdam-city-archives-03zLiVWqwp8-unsplash(1).jpg"
+          class="mainImage"
+        />
+        <div class="TextInPhoto">
+          Photo by Amsterdam City Archives in
+          <a
+            href="https://unsplash.com/photos/a-painting-of-people-walking-down-a-street-03zLiVWqwp8"
+            >unsplash.com</a
+          >
+        </div>
+      </div>
+
+      <div class="maintextDIV">
+        <div class="mainText">
+          This is not a real online service! You know you need something <br />
+          like this in your life to help you realize your deepest dreams Sign up
+          now to get started .
+          <div class="subtext">
+            Please fill out this form to create an account and start your
+            journey towards your dreams.
+          </div>
+        </div>
+
+        <div class="LetsDoit">
+          <div class="textlets">Lets do it !</div>
+
+          <div class="listForm">
+            <form action="https://httpbin.org/post" method="post">
+              <div class="name">
+                <div class="first">
+                  <label for="name">First Name</label>
+                  <br />
+                  <input
+                    type="text"
+                    class="firstNAME"
+                    name="name"
+                    required
+                    placeholder="First Name "
+                  />
+                  <div class="ErrorFirstName"></div>
+                </div>
+                <div class="last">
+                  <label for="name">Last Name</label>
+                  <br />
+                  <input
+                    type="text"
+                    class="lastNAME"
+                    name="lname"
+                    required
+                    placeholder="Last Name "
+                  />
+                  <div class="ErrorLastName"></div>
+                </div>
+              </div>
+
+              <div class="PhoneAndEmail">
+                <div class="phone">
+                  <label for="phone">Phone Number</label>
+                  <br />
+                  <input
+                    type="tel"
+                    class="phonenumber"
+                    name="phone"
+                    pattern="[0-9]{11}"
+                    required
+                    placeholder="01234567890"
+                  />
+                  <div class="ErrorNumber"></div>
+                </div>
+
+                <div class="email">
+                  <label for="email">Email</label>
+                  <br />
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="example@gmail.com"
+                  />
+                  <div class="ErrorEmail"></div>
+                </div>
+              </div>
+
+              <div class="passwordform">
+                <div class="password">
+                  <label for="password">Password</label>
+                  <br />
+                  <input
+                    type="password"
+                    id="password2"
+                    name="password"
+                    required
+                    placeholder="Password"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,20}$"
+                  />
+                  <div class="ErrorPasswordLength"></div>
+                </div>
+
+                <div class="confirmpassword">
+                  <label for="password">Confirm Password</label>
+                  <br />
+                  <input
+                    type="password"
+                    id="confirmPassword"
+                    name="password"
+                    required
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,20}$"
+                    placeholder="Password"
+                  />
+                  <div id="passwordError"></div>
+                </div>
+              </div>
+          
+          </div>
+
+          <div class="submit">
+            <button type="submit" class="button">Create Account </button>
+            <div class="AlredyHaveAccount">
+              Already have an account? <a href="#">Login</a>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
